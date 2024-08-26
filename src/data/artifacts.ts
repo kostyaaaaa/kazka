@@ -6,7 +6,7 @@ export const artifacts: Artifact[] = [
     name: 'Сандалі Стрибога',
     description:
       'Сандалі Стрибога, бога вітру. Збільшують характеристику Спритності та Втечі персонажа на 1.',
-    price: 80,
+    price: 40,
     maxCount: 1,
     weight: 15,
     slot: ArtifactSlots.Feet,
@@ -15,7 +15,7 @@ export const artifacts: Artifact[] = [
     name: 'Плащ невидимка',
     description:
       'Плащ, з луски русалок. Збільшує характеристику Викрадення та Втечі на 2.',
-    price: 110,
+    price: 55,
     maxCount: 1,
     weight: 30,
     slot: ArtifactSlots.Back,
@@ -24,7 +24,7 @@ export const artifacts: Artifact[] = [
     name: 'Окуляри з скарбниці Велеса',
     description:
       'Окуляри, які були вкрадені з скарбниці бога достатку та багатств. Збільшують характеристику Пошуку на 2.',
-    price: 100,
+    price: 50,
     maxCount: 1,
     weight: 10,
     slot: ArtifactSlots.Head,
@@ -33,7 +33,7 @@ export const artifacts: Artifact[] = [
     name: 'Книга Мольфара',
     description:
       'Книга Мольфара, в якій записані чари. Збільшує характеристику Лікування на 1',
-    price: 80,
+    price: 40,
     maxCount: 1,
     weight: 25,
     slot: ArtifactSlots.Hands,
@@ -42,7 +42,7 @@ export const artifacts: Artifact[] = [
     name: 'Тризуб',
     description:
       'Зброя, яка здатна підкорювати моря й океани. Збільшує характеристику точності на 1',
-    price: 80,
+    price: 40,
     maxCount: 1,
     weight: 30,
     slot: ArtifactSlots.Hands,
@@ -51,7 +51,7 @@ export const artifacts: Artifact[] = [
     name: 'Корона Чахлика Невмирущого',
     description:
       'Святиня могутнього Чахлика Невмирущого. Збільшує характеристику приорітету на 1',
-    price: 100,
+    price: 50,
     maxCount: 1,
     weight: 25,
     slot: ArtifactSlots.Feet,
