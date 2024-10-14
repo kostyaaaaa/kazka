@@ -1,4 +1,5 @@
 import { Artifact, ArtifactSlots } from '../models/Artifact.model';
+import { ItemNames } from '../models/Item.model';
 import { arrayToObject } from '../utils';
 
 export const artifacts: Artifact[] = [
@@ -10,6 +11,10 @@ export const artifacts: Artifact[] = [
     maxCount: 1,
     weight: 15,
     slot: ArtifactSlots.Feet,
+    recipe: {
+      [ItemNames['Деревина']]: 1,
+      [ItemNames['Залізна Руда']]: 1,
+    },
   },
   {
     name: 'Плащ невидимка',
@@ -19,6 +24,10 @@ export const artifacts: Artifact[] = [
     maxCount: 1,
     weight: 30,
     slot: ArtifactSlots.Back,
+    recipe: {
+      [ItemNames['Папір']]: 1,
+      [ItemNames['Срібне Кільце']]: 1,
+    },
   },
   {
     name: 'Окуляри з скарбниці Велеса',
@@ -28,6 +37,10 @@ export const artifacts: Artifact[] = [
     maxCount: 1,
     weight: 10,
     slot: ArtifactSlots.Head,
+    recipe: {
+      [ItemNames['Залізна Руда']]: 1,
+      [ItemNames['Срібне Кільце']]: 1,
+    },
   },
   {
     name: 'Книга Мольфара',
@@ -37,6 +50,9 @@ export const artifacts: Artifact[] = [
     maxCount: 1,
     weight: 25,
     slot: ArtifactSlots.Hands,
+    recipe: {
+      [ItemNames['Папір']]: 2,
+    },
   },
   {
     name: 'Тризуб',
@@ -46,6 +62,9 @@ export const artifacts: Artifact[] = [
     maxCount: 1,
     weight: 30,
     slot: ArtifactSlots.Hands,
+    recipe: {
+      [ItemNames['Залізна Руда']]: 2,
+    },
   },
   {
     name: 'Корона Чахлика Невмирущого',
@@ -55,6 +74,10 @@ export const artifacts: Artifact[] = [
     maxCount: 1,
     weight: 25,
     slot: ArtifactSlots.Feet,
+    recipe: {
+      [ItemNames['Золоте Кільце']]: 1,
+      [ItemNames['Залізна Руда']]: 1,
+    },
   },
 ];
 

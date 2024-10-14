@@ -47,7 +47,12 @@ export const stringifyArtifact = (
   stringifyType: StringifyType,
 ): string => {
   if (stringifyType === StringifyType.Long) {
-    return `Артефакт '${artifact.name}'\n${artifact.description}\nЦіна - ${artifact.price}$\nСлот - ${artifact.slot}\nВага - ${artifact.weight}\nМакс. кількість - ${artifact.maxCount}\n`;
+    let stringifiedRecipe = '';
+    Object.entries(artifact.recipe).forEach(([key, value], index, array) => {
+      const suffix = index === array.length - 1 ? '' : ', ';
+      stringifiedRecipe += `${key}: ${value}${suffix}`;
+    });
+    return `Артефакт '${artifact.name}'\n${artifact.description}\nЦіна - ${artifact.price}$\nСлот - ${artifact.slot}\nВага - ${artifact.weight}\nМакс. кількість - ${artifact.maxCount}\nРецепт - ${stringifiedRecipe}`;
   }
   return `Артефакт '${artifact.name}'\n`;
 };

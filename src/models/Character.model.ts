@@ -15,6 +15,7 @@ export enum CharacterStats {
   Accuracy = 'Точність',
   Priority = 'Приорітет',
   Resistance = 'Опір',
+  Alchemy = 'Алхімія',
 }
 
 export type Character = {

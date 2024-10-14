@@ -20,6 +20,7 @@ export const characters: Character[] = [
       allItemsObject['Камінь обміну'],
     ],
     stats: {
+      [CharacterStats.Alchemy]: 1,
       [CharacterStats.Strength]: -2,
       [CharacterStats.Agility]: 2,
       [CharacterStats.Stealing]: 4,
@@ -52,6 +53,7 @@ export const characters: Character[] = [
       allItemsObject['Камінь обміну'],
     ],
     stats: {
+      [CharacterStats.Alchemy]: 3,
       [CharacterStats.Strength]: 2,
       [CharacterStats.Agility]: -1,
       [CharacterStats.Stealing]: 1,
@@ -82,6 +84,7 @@ export const characters: Character[] = [
       allItemsObject['Камінь обміну'],
     ],
     stats: {
+      [CharacterStats.Alchemy]: 1,
       [CharacterStats.Strength]: 4,
       [CharacterStats.Agility]: 0,
       [CharacterStats.Stealing]: 0,
@@ -112,6 +115,7 @@ export const characters: Character[] = [
       allItemsObject['Камінь обміну'],
     ],
     stats: {
+      [CharacterStats.Alchemy]: 0,
       [CharacterStats.Strength]: 0,
       [CharacterStats.Agility]: 1,
       [CharacterStats.Stealing]: 1,
@@ -142,6 +146,7 @@ export const characters: Character[] = [
       allItemsObject['Камінь обміну'],
     ],
     stats: {
+      [CharacterStats.Alchemy]: 0,
       [CharacterStats.Strength]: 1,
       [CharacterStats.Agility]: 1,
       [CharacterStats.Stealing]: 0,
@@ -169,6 +174,7 @@ export const characters: Character[] = [
       allItemsObject['Камінь обміну'],
     ],
     stats: {
+      [CharacterStats.Alchemy]: -1,
       [CharacterStats.Strength]: 4,
       [CharacterStats.Agility]: 1,
       [CharacterStats.Stealing]: 0,
@@ -198,6 +204,7 @@ export const characters: Character[] = [
       allItemsObject['Камінь обміну'],
     ],
     stats: {
+      [CharacterStats.Alchemy]: 0,
       [CharacterStats.Strength]: 3,
       [CharacterStats.Agility]: 0,
       [CharacterStats.Stealing]: 0,

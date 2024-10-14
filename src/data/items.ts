@@ -1,9 +1,9 @@
-import { Item } from '../models/Item.model';
+import { Item, ItemNames } from '../models/Item.model';
 import { arrayToObject } from '../utils';
 
 export const stones: Item[] = [
   {
-    name: 'Камінь обміну',
+    name: ItemNames['Камінь обміну'],
     price: 5,
     description:
       'Зачарований камінь, який використовується для обміну істотами, артефактами між гравцями. Не можна передавати. Щоб передати Істоту або Артефакт, достатньо мати 1 камінь. Після використання камінь пропадає.',
@@ -11,14 +11,14 @@ export const stones: Item[] = [
     weight: 1,
   },
   {
-    name: 'Камінь Душі',
+    name: ItemNames['Камінь Душі'],
     price: 5,
     description: 'Зачарований камінь, в який можна сховати душу Істоти',
     maxCount: 10,
     weight: 5,
   },
   {
-    name: 'Камінь Стихії Природи',
+    name: ItemNames['Камінь Стихії Природи'],
     price: 25,
     description:
       'Зачарований камінь, за допомогою якого можна підняти рівень істоти на 1. Після використання камінь пропадає',
@@ -26,7 +26,7 @@ export const stones: Item[] = [
     weight: 5,
   },
   {
-    name: 'Камінь Стихії Вогню',
+    name: ItemNames['Камінь Стихії Вогню'],
     price: 25,
     description:
       'Зачарований камінь, за допомогою якого можна підняти рівень істоти на 1. Після використання камінь пропадає',
@@ -34,7 +34,7 @@ export const stones: Item[] = [
     weight: 5,
   },
   {
-    name: 'Камінь Стихії Вітру',
+    name: ItemNames['Камінь Стихії Вітру'],
     price: 25,
     description:
       'Зачарований камінь, за допомогою якого можна підняти рівень істоти на 1. Після використання камінь пропадає',
@@ -42,7 +42,7 @@ export const stones: Item[] = [
     weight: 5,
   },
   {
-    name: 'Камінь Стихії Води',
+    name: ItemNames['Камінь Стихії Води'],
     price: 25,
     description:
       'Зачарований камінь, за допомогою якого можна підняти рівень істоти на 1. Після використання камінь пропадає',
@@ -50,7 +50,7 @@ export const stones: Item[] = [
     weight: 5,
   },
   {
-    name: 'Камінь Стихії Світла',
+    name: ItemNames['Камінь Стихії Світла'],
     price: 25,
     description:
       'Зачарований камінь, за допомогою якого можна підняти рівень істоти на 1. Після використання камінь пропадає',
@@ -58,7 +58,7 @@ export const stones: Item[] = [
     weight: 5,
   },
   {
-    name: 'Камінь Стихії Темряви',
+    name: ItemNames['Камінь Стихії Темряви'],
     price: 25,
     description:
       'Зачарований камінь, за допомогою якого можна підняти рівень істоти на 1. Після використання камінь пропадає',
@@ -66,7 +66,7 @@ export const stones: Item[] = [
     weight: 5,
   },
   {
-    name: 'Камінь Універсальної стихії',
+    name: ItemNames['Камінь Універсальної стихії'],
     price: 45,
     description:
       'Зачарований камінь, за допомогою якого можна підняти рівень істоти на 1. Після використання камінь пропадає',
@@ -78,7 +78,7 @@ export const stones: Item[] = [
 export const usableItems: Item[] = [
   ...stones,
   {
-    name: 'Подорожник',
+    name: ItemNames['Подорожник'],
     price: 5,
     description:
       "Трава, яка використовується для лікування істот. Лікує 2 здоров'я",
@@ -86,7 +86,7 @@ export const usableItems: Item[] = [
     weight: 2,
   },
   {
-    name: 'Зілля відновлення',
+    name: ItemNames['Зілля відновлення'],
     price: 10,
     description:
       "Зілля, яке використовується для лікування істот. Лікує 5 здоров'я",
@@ -94,7 +94,7 @@ export const usableItems: Item[] = [
     weight: 10,
   },
   {
-    name: 'Казан з зіллям відновлення',
+    name: ItemNames['Казан з зіллям відновлення'],
     price: 40,
     description:
       "Великий казан, з зіллям відновлення. Лікує 10 здоров'я усім істотам персонажа",
@@ -102,7 +102,7 @@ export const usableItems: Item[] = [
     weight: 40,
   },
   {
-    name: 'Рюкзак',
+    name: ItemNames['Рюкзак'],
     price: 30,
     description:
       'Рюкзак, який можна вдягнути, аби збільшити кількість багажу, який можна носити з собою. Носима вага +50',
@@ -111,58 +111,82 @@ export const usableItems: Item[] = [
   },
 ];
 
-export const sellItems: Item[] = [
+export const lootItems: Item[] = [
   {
-    name: 'Золоте Кільце',
+    name: ItemNames['Папір'],
+    price: 5,
+    description:
+      "Папір — це універсальний ігровий матеріал, що використовується для створення різноманітних об'єктів та інструментів",
+    maxCount: 5,
+    weight: 3,
+  },
+  {
+    name: ItemNames['Залізна Руда'],
+    price: 5,
+    description:
+      "Метал — це універсальний ігровий матеріал, що використовується для створення різноманітних об'єктів та інструментів",
+    maxCount: 5,
+    weight: 10,
+  },
+  {
+    name: ItemNames['Деревина'],
+    price: 5,
+    description:
+      "Деревина — це універсальний ігровий матеріал, що використовується для створення різноманітних об'єктів та інструментів",
+    maxCount: 5,
+    weight: 5,
+  },
+  {
+    name: ItemNames['Золоте Кільце'],
     price: 30,
     description: 'Золота прикраса, яку можна продати на ринку',
     maxCount: 3,
     weight: 10,
   },
   {
-    name: 'Срібне Кільце',
+    name: ItemNames['Срібне Кільце'],
     price: 20,
     description: 'Срібна прикраса, яку можна продати на ринку',
     maxCount: 3,
     weight: 10,
   },
   {
-    name: 'Шкіра вбитої істоти',
+    name: ItemNames['Шкіра вбитої істоти'],
     price: 15,
     description: 'Шкіра істоти, що була переможена',
     maxCount: 10,
     weight: 5,
   },
   {
-    name: 'Попіл вбитої істоти',
+    name: ItemNames['Попіл вбитої істоти'],
     price: 5,
     description: 'Попіл істоти, що була переможена',
     maxCount: 10,
     weight: 1,
   },
   {
-    name: 'Зуб вбитої істоти',
+    name: ItemNames['Зуб вбитої істоти'],
     price: 10,
     description: 'Зуб істоти, що була переможена',
     maxCount: 10,
     weight: 5,
   },
   {
-    name: 'Малий мішечок золота',
+    name: ItemNames['Малий мішечок золота'],
     price: 15,
     description: 'Мішечок, в якому лежить 15 золота',
     maxCount: 100,
     weight: 0,
   },
   {
-    name: 'Сумка з золотом',
+    name: ItemNames['Сумка з золотом'],
     price: 25,
     description: 'Сумка, в якій лежить 25 золота',
     maxCount: 100,
     weight: 0,
   },
   {
-    name: 'Скринька золота',
+    name: ItemNames['Скринька золота'],
     price: 45,
     description: 'Скринька, в якій лежить 45 золота',
     maxCount: 100,
@@ -170,6 +194,6 @@ export const sellItems: Item[] = [
   },
 ];
 
-export const allItems: Item[] = [...sellItems, ...usableItems];
+export const allItems: Item[] = [...lootItems, ...usableItems];
 
 export const allItemsObject = arrayToObject(allItems);

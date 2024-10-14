@@ -1,3 +1,5 @@
+import { ItemNames } from './Item.model';
+
 export enum ArtifactSlots {
   Hands = 'Руки',
   Feet = 'Ноги',
@@ -12,4 +14,5 @@ export type Artifact = {
   weight: number;
   maxCount: number;
   slot: ArtifactSlots;
+  recipe: { [key in ItemNames]?: number };
 };
